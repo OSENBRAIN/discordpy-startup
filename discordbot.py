@@ -32,7 +32,7 @@ async def rect(ctx, about = "募集", cnt = 4, settime = 10.0):
         try:
             reaction, user = await client.wait_for('reaction_add', timeout=settime, check=check)
         except asyncio.TimeoutError:
-            await ctx.send('残念、人が足りなかったようだ...')
+            await ctx.send('ｱﾂﾏﾗﾅｶｯﾀ...')
             break
         else:
             print(str(reaction.emoji))
@@ -48,7 +48,7 @@ async def rect(ctx, about = "募集", cnt = 4, settime = 10.0):
                     test.add_field(name=f"あと__{cnt}__人 募集中\n", value='\n'.join(reaction_member), inline=True)
                     await msg.edit(embed=test)
                     finish = discord.Embed(title=about,colour=0x1e90ff)
-                    finish.add_field(name="おっと、メンバーがきまったようだ",value='\n'.join(reaction_member), inline=True)
+                    finish.add_field(name="メンバーが集まったようだ・・・",value='\n'.join(reaction_member), inline=True)
                     await ctx.send(embed=finish)
 
             elif str(reaction.emoji) == '✖':
