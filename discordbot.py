@@ -65,4 +65,4 @@ async def rect(ctx, about = "募集", cnt = 4, settime = 10.0):
 
 
         
-client.run('NzIyMDQ2OTg3NjE2MTI0OTY4.Xud0LA.yTvXHSRrnf7eFKGtwt3rtM-s0Ts')
+client.run('NzIyMDQ2OTg3NjE2MTI0OTY4.XueX8Q.Ylr1H3RZUu3T3FaBQpR9nmt4pgI')
